@@ -11,14 +11,14 @@ int main()
 
 	cout << "p = "; cin >> p;
 	cout << "q = "; cin >> q;
-	double c = pow(h(abs(p - q), sqrt(abs(p - q))), 2) + h(1, q * q - p * p);
+	double c = pow(h(abs(p - q), sqrt(abs(p - q))), 2) + h(1, q * q - p * p);// прототип
 
 	cout << "c = " << c << endl;
 
 	return 0;
 }
 
-double h(const double x, const double y)
+double h(const double x, const double y) // визначення
 {
 	return (y * y - sqrt(x * x + y * y)) / (1 + x * x * y * y);
 }
